@@ -1,0 +1,47 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+.sidebar {
+    background-color: blueviolet;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+.main-content {
+    background-color: grey;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+h4 {
+    color: white;
+}
+
+.project-cards{
+    background-color: black;
+    color:white;
+}
+
+.annoucment-card, .trending-card {
+    background-color: black;
+    color: white;
+}
+
+
+
+
