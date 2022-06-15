@@ -13,7 +13,15 @@ body {
 .header {
     background-color: black;
     color: white;
+    display: grid;
+    grid-auto-flow: row;
 }
+.search-bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
 .sidebar {
     background-color: blueviolet;
     grid-column: 1;
@@ -21,6 +29,17 @@ body {
 }
 .main-content {
     background-color: grey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+.user-projects {
+    grid-row: 1 / span 2;
+}
+
+.annoucments, .trending {
+    grid-column-start: 2;
+
 }
 .cards-container {
     display: grid;
@@ -35,6 +54,7 @@ h4 {
 .project-cards{
     background-color: black;
     color:white;
+    height: 200px;
 }
 
 .annoucment-card, .trending-card {
