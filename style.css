@@ -41,6 +41,10 @@ body {
     align-self: center;
     justify-self: end;
 }
+.icons-user {
+    align-self: center;
+    justify-self: flex-start;
+}
 .header .icons, .btn-menu {
     place-self: center;
 }
@@ -83,13 +87,14 @@ body {
     font-size: clamp(1rem, 2vw, 1.3rem);
     display: grid;
     gap: 10px;
+    padding-left: 20px;
 }
 .main-content {
     background-color: var(--bg-color-second);
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 15px;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .main-content .user-projects{
@@ -98,7 +103,7 @@ body {
 
 .main-content .user-projects .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
 }
 
@@ -139,6 +144,12 @@ body {
 
 
 /* ~~~~~~~~ FONTS ~~~~~~~~~~~ */
+
+.user-tag{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
 img {
     vertical-align: middle;
 }
@@ -148,7 +159,7 @@ img {
     font-weight: bold;
 }
 h3 {
-    padding-left: 25px;
+    padding-left: 10px;
     font-size:clamp(1.2rem, 3vw, 2rem)
 }
 h4 {
