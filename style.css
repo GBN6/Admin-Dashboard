@@ -121,6 +121,7 @@ body {
     color: var(--bg-color-font);
     border-radius: 20px;
     padding: 20px;
+    margin-right: 20px;
 }
 
 .ann-content{
