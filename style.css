@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
 }
 #container {
     display: grid;
@@ -35,6 +35,14 @@ body {
 
 .header .icons, .btn-menu {
     place-self: center;
+}
+.btn-menu {
+    border-style: none;
+    border-radius: 15px;
+    font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+    padding: 5px 20px;
+    background-color: var(--big-color-side);
+    font-weight: 600;
 }
 .header .user-info {
     padding-left: 25px ;
@@ -67,7 +75,9 @@ body {
     padding: 20px;
 }
 
-.main-content .user-projects {
+.main-content .main-sidebar {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
 
 
 }
@@ -98,8 +108,14 @@ body {
     background-color: var(--bg-color-main);
     color: var(--bg-color-font);
     border-radius: 20px;
-    padding: 5px;
+    padding: 20px;
 }
+
+.ann-content{
+    border-bottom: 0.5px solid var(--bg-color-second);
+}
+
+
 
 
 
@@ -107,7 +123,10 @@ h3 {
     padding-left: 25px;
     font-size: 2rem;
 }
-
 h4 {
     color: var(--bg-color-font);
+}
+.ann-title, .title {
+    font-weight: 900;
+    font-size: 1.1rem;
 }
