@@ -1,4 +1,10 @@
+:root {
+    --bg-color-main: #222831;
+    --bg-color-second: #393E46;
+    --bg-color-font: #EEEEEE;
+    --big-color-side: #FFD369;
 
+}
 body {
     height: 100vh;
     margin: 0;
@@ -13,14 +19,21 @@ body {
 }
 
 .header {
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color-main);
+    color: var(--bg-color-font);
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
+.header .search-bar {
+    align-self: center;
+    padding-left: 25px;
+}
+#search {
+    width: clamp(150px, 80%, 400px);
+}
 
-.header .search-bar, .icons, .btn-menu {
+.header .icons, .btn-menu {
     place-self: center;
 }
 .header .user-info {
@@ -28,11 +41,12 @@ body {
 }
 
 .sidebar {
-    background-color: blueviolet;
+    background-color: var(--big-color-side);
     grid-column: 1;
     grid-row: 1 / span 2;
     display: grid;
     grid-template-rows: 0.5fr 5fr;
+    color: var(--bg-color-main);
 }
 .sidebar .sidebar-menu {
     display: grid;
@@ -46,7 +60,7 @@ body {
     gap: 10px;
 }
 .main-content {
-    background-color: grey;
+    background-color: var(--bg-color-second);
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 15px;
@@ -71,16 +85,20 @@ body {
 
 
 .main-content .user-projects .cards-container .project-cards{
-    background-color: black;
-    color:white;
+    background-color: var(--bg-color-main);
+    color:var(--bg-color-font);
     height: 200px;
     padding: 5px;
+    border-left: 5px solid var(--big-color-side);
+    border-radius: 20px;
 
 }
 
 .annoucment-card, .trending-card {
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color-main);
+    color: var(--bg-color-font);
+    border-radius: 20px;
+    padding: 5px;
 }
 
 
@@ -91,5 +109,5 @@ h3 {
 }
 
 h4 {
-    color: white;
+    color: var(--bg-color-font);
 }
