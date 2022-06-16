@@ -32,6 +32,7 @@ body {
 }
 #search {
     width: clamp(150px, 80%, 700px);
+    height: 40px;
     border-radius: 10px;
     border: none;
     background-color: #393E46;
@@ -114,6 +115,12 @@ body {
     border-left: 5px solid var(--big-color-side);
     border-radius: 20px;
     height: 200px;
+}
+
+.icons-menu {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
 
 .annoucment-card, .trending-card {
