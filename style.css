@@ -26,10 +26,18 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 .header .search-bar {
+    display: flex;
+    align-items: center;
     padding-left: 25px;
 }
 #search {
     width: clamp(150px, 80%, 700px);
+    border-radius: 10px;
+    border: none;
+    background-color: #393E46;
+}
+label {
+    margin-top: 20px ;
 }
 
 .header .icons, .btn-menu {
@@ -62,7 +70,7 @@ body {
 }
 .sidebar .sidebar-menu ul {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     display: grid;
     gap: 10px;
 }
@@ -74,33 +82,27 @@ body {
     padding: 20px;
 }
 
-.main-content .main-sidebar {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-
-
+.main-content .user-projects{
+    width: 95%;
 }
 
 .main-content .user-projects .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
 .annoucments, .trending {
-    grid-column-start: 2;
+    /* grid-column-start: 2; */
 }
-
-
 
 .main-content .user-projects .cards-container .project-cards{
     background-color: var(--bg-color-main);
     color:var(--bg-color-font);
-    height: 200px;
     padding: 5px;
     border-left: 5px solid var(--big-color-side);
     border-radius: 20px;
-
+    height: 200px;
 }
 
 .annoucment-card, .trending-card {
@@ -116,11 +118,14 @@ body {
 
 
 
+img {
+    vertical-align: middle;
+}
 
 
 h3 {
     padding-left: 25px;
-    font-size: 2rem;
+    font-size:clamp(1.2rem, 3vw, 2rem)
 }
 h4 {
     color: var(--bg-color-font);
