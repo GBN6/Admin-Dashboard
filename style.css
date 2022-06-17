@@ -152,7 +152,14 @@ body {
 
 
 /* ~~~~~~~~ FONTS ~~~~~~~~~~~ */
-
+.link{
+    text-decoration: none;
+    color: var(--bg-color-main);
+}
+.link:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px #393E46;
+}
 .user-tag{
     font-weight: bolder;
     font-size: 1.2rem;
