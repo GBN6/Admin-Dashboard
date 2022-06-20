@@ -30,12 +30,20 @@ body {
     align-items: center;
     padding-left: 25px;
 }
+form {
+    display: flex;
+    min-width: 100%;
+}
 #search {
     width: clamp(150px, 80%, 700px);
     height: 40px;
     border-radius: 10px;
     border: none;
     background-color: #393E46;
+}
+.magnify-img {
+    background-color: var(--bg-color-main);
+    border: none;
 }
 
 .bell {
@@ -156,7 +164,7 @@ body {
     text-decoration: none;
     color: var(--bg-color-main);
 }
-.link:hover {
+.magnify-img:hover, .link:hover {
     transform: scale(1.1);
     text-shadow: 1px 1px #393E46;
 }
